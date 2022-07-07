@@ -1,15 +1,8 @@
-x = int(input('--> '))
-y = int(input('--> '))
+X = input('X = ')
+Y = input('Y = ')
+Z = input('Z = ')
 
+left_part = not (X and Y and Z)
+right_part = (not X) or (not Y) or (not Z)
 
-if x > 0:
-    if y > 0:
-        print('Первая четверть')
-    else:
-        print('Четвертая четверть')
-else:
-    if y > 0:
-        print('Вторая четверть')
-    else:
-        print('Третья четверть')
-
+print(left_part == right_part)
