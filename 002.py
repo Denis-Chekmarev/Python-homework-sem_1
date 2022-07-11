@@ -1,8 +1,4 @@
-X = input('X = ')
-Y = input('Y = ')
-Z = input('Z = ')
-
-left_part = not (X and Y and Z)
-right_part = (not X) or (not Y) or (not Z)
-
-print(left_part == right_part)
+for x in True, False:
+    for y in True, False:
+        for z in True, False:
+            print(f'{x = } {y = } {z = } --> {not (x or y or z) == (not x and not y and not z)}')
