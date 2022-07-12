@@ -10,7 +10,7 @@ def getNumber():
 day = getNumber()
 
 
-if day == 6 or day == 7:
+if 6 <= day <= 7:
     print('It\'s a weekend')
 else: 
     print('It\'s weekdays')
